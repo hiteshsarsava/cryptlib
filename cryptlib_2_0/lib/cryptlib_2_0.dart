@@ -6,6 +6,12 @@ import 'package:crypto/crypto.dart';
 import 'package:encrypt/encrypt.dart';
 
 class CryptLib {
+  CryptLib._privateConstructor();
+
+  static final CryptLib _instance = CryptLib._privateConstructor();
+
+  static CryptLib get instance => _instance;
+
   String _encryptDecrypt(String inputText, String encryptionKey,
       _EncryptMode mode, String initVector) {
     final key = Key.fromUtf8(encryptionKey);
@@ -49,15 +55,15 @@ class CryptLib {
     }
   }
 
-  String decryptCipherTextWithRandomIV(String cipherText, String key) {
-    final decrypted = _encryptDecrypt(
-        cipherText, _sha256key(key, 32), _EncryptMode.decrypt, _generateRandomIV16());
+  String decryptCipherTextWithRandomIV(String cipherText, String password) {
+    final decrypted = _encryptDecrypt(cipherText, _sha256key(password, 32),
+        _EncryptMode.decrypt, _generateRandomIV16());
     return decrypted.substring(16, decrypted.length);
   }
 
-  String encryptPlainTextWithRandomIV(String plainText, String key) {
+  String encryptPlainTextWithRandomIV(String plainText, String password) {
     final encrypted = _encryptDecrypt(_generateRandomIV16() + plainText,
-        _sha256key(key, 32), _EncryptMode.encrypt, _generateRandomIV16());
+        _sha256key(password, 32), _EncryptMode.encrypt, _generateRandomIV16());
     return encrypted;
   }
 }
