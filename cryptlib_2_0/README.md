@@ -47,3 +47,12 @@ DecryptedText Hello World!
 ## Additional information
 
 Supported Platforms
+```dart
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+```
