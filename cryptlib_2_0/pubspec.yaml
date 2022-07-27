@@ -2,6 +2,11 @@ name: cryptlib_2_0
 description: An Encrypt and Decrypt Text.
 version: 0.0.1
 homepage: https://github.com/hiteshsarsava/cryptlib
+repository: https://github.com/hiteshsarsava/cryptlib
+issue_tracker: https://github.com/hiteshsarsava/cryptlib/issues
+documentation: https://github.com/hiteshsarsava/cryptlib/tree/main/cryptlib_2_0/doc/api
+
+publish_to: https://pub.dev/
 
 environment:
   sdk: '>=2.17.0 <3.0.0'
@@ -44,13 +49,22 @@ flutter:
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts in packages, see
-  # https://flutter.dev/custom-fonts/#from-packages
+#       - asset: fonts/Schyler-Italic.ttf
+#         style: italic
+#   - family: Trajan Pro
+#     fonts:
+#       - asset: fonts/TrajanPro.ttf
+#       - asset: fonts/TrajanPro_Bold.ttf
+#         weight: 700
+#
+# For details regarding fonts in packages, see
+# https://flutter.dev/custom-fonts/#from-packages
+
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
