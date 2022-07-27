@@ -38,8 +38,11 @@ main() {
 }
 ```
 
-Result for above EecryptedText dkLSCeGtcDVrBtiFsNPG08I76MQRlMOugkI6tsQR36Q= DecryptedText Hello
-World!
+```dart
+Result for above 
+EecryptedText dkLSCeGtcDVrBtiFsNPG08I76MQRlMOugkI6tsQR36Q= 
+DecryptedText Hello World!
+```
 
 ## Additional information
 
