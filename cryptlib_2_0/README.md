@@ -12,9 +12,12 @@ Android and Windows platforms.
 
 Add as dependency in pubspec.yaml file
 
+```dart
 dependencies:
-flutter:
-sdk: flutter cryptlib_2_0: ^0.0.1
+  flutter:
+    sdk: flutter
+  cryptlib_2_0: ^0.0.1
+```
 
 ## Usage
 
@@ -34,9 +37,9 @@ main() {
   print("DecryptedText ${text}");
 }
 ```
-Result for above
-EecryptedText dkLSCeGtcDVrBtiFsNPG08I76MQRlMOugkI6tsQR36Q=
-DecryptedText Hello World!
+
+Result for above EecryptedText dkLSCeGtcDVrBtiFsNPG08I76MQRlMOugkI6tsQR36Q= DecryptedText Hello
+World!
 
 ## Additional information
 

@@ -55,12 +55,16 @@ class CryptLib {
     }
   }
 
+  ///Decrypt the string using the password. The password can by any length
+  ///e.g. [CryptLib.instance.decryptCipherTextWithRandomIV(encryptText, "Password")]
   String decryptCipherTextWithRandomIV(String cipherText, String password) {
     final decrypted = _encryptDecrypt(cipherText, _sha256key(password, 32),
         _EncryptMode.decrypt, _generateRandomIV16());
     return decrypted.substring(16, decrypted.length);
   }
 
+  ///Encrypt the string using the password. The password can by any length
+  ///e.g. [CryptLib.instance.encryptPlainTextWithRandomIV(plainText, "Password")]
   String encryptPlainTextWithRandomIV(String plainText, String password) {
     final encrypted = _encryptDecrypt(_generateRandomIV16() + plainText,
         _sha256key(password, 32), _EncryptMode.encrypt, _generateRandomIV16());

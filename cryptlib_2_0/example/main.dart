@@ -1,4 +1,5 @@
 import 'package:cryptlib_2_0/cryptlib_2_0.dart';
+import 'package:flutter/foundation.dart';
 
 main() {
   const plainText = "Hello World!";
@@ -6,9 +7,13 @@ main() {
   final encryptText =
       CryptLib.instance.encryptPlainTextWithRandomIV(plainText, "Password");
 
-  print("EecryptedText ${encryptText}");
+  if (kDebugMode) {
+    print("EecryptedText $encryptText");
+  }
 
   final text =
       CryptLib.instance.decryptCipherTextWithRandomIV(encryptText, "Password");
-  print("DecryptedText ${text}");
+  if (kDebugMode) {
+    print("DecryptedText $text");
+  }
 }
