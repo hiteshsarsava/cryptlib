@@ -1,6 +1,6 @@
 name: cryptlib_2_0
-description: An Encrypt and Decrypt Text.
-version: 0.0.1
+description: This package is interfacing Cryptlib library in dart. It can also be used in flutter applications.
+version: 0.0.3
 homepage: https://github.com/hiteshsarsava/cryptlib
 repository: https://github.com/hiteshsarsava/cryptlib
 issue_tracker: https://github.com/hiteshsarsava/cryptlib/issues
@@ -27,26 +27,26 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
-  # To add assets to your package, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
-  #
-  # For details regarding assets in packages, see
-  # https://flutter.dev/assets-and-images/#from-packages
-  #
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
+# To add assets to your package, add an assets section, like this:
+# assets:
+#   - images/a_dot_burr.jpeg
+#   - images/a_dot_ham.jpeg
+#
+# For details regarding assets in packages, see
+# https://flutter.dev/assets-and-images/#from-packages
+#
+# An image asset can refer to one or more resolution-specific "variants", see
+# https://flutter.dev/assets-and-images/#resolution-aware
 
-  # To add custom fonts to your package, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+# To add custom fonts to your package, add a fonts section here,
+# in this "flutter" section. Each entry in this list should have a
+# "family" key with the font family name, and a "fonts" key with a
+# list giving the asset and other descriptors for the font. For
+# example:
+# fonts:
+#   - family: Schyler
+#     fonts:
+#       - asset: fonts/Schyler-Regular.ttf
 #       - asset: fonts/Schyler-Italic.ttf
 #         style: italic
 #   - family: Trajan Pro
