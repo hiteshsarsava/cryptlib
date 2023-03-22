@@ -1,3 +1,5 @@
+# cryptlib_2_0
+
 This package is interfacing Cryptlib library in dart. It can also be used in flutter applications.
 Using companion framework libraries, you should be able to encrypt/decrypt between node, iOS,
 Android and Windows platforms.
@@ -12,9 +14,12 @@ Android and Windows platforms.
 
 Add as dependency in pubspec.yaml file
 
+```dart
 dependencies:
-flutter:
-sdk: flutter cryptlib_2_0: ^0.0.1
+  flutter:
+    sdk: flutter
+  cryptlib_2_0: ^0.0.1
+```
 
 ## Usage
 
@@ -34,10 +39,22 @@ main() {
   print("DecryptedText ${text}");
 }
 ```
-Result for above
-EecryptedText dkLSCeGtcDVrBtiFsNPG08I76MQRlMOugkI6tsQR36Q=
-DecryptedText Hello World!
+
+```
+* Result for above 
+* EecryptedText dkLSCeGtcDVrBtiFsNPG08I76MQRlMOugkI6tsQR36Q= 
+* DecryptedText Hello World!
+```
 
 ## Additional information
 
 Supported Platforms
+```dart
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+```
